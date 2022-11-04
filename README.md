@@ -16,9 +16,8 @@ NFT collab-giveaway BOT は自分のDiscordサーバーで他のNFTプロジェ�
 
 
 ## 各ファイルの説明
-/discord/deployCommand.js  Commandを登録しているファイル
+/discord/deployCommand.js →  Commandを登録しているファイル
 
-/discord/index.js          /discord/deployCommand.jsで登録したコマンドを実行するファイル、サーバーの中で常時起動し動かしている
+/discord/index.js　→          /discord/deployCommand.jsで登録したコマンドを実行するファイル、サーバーの中で常時起動し動かしている
 
-
-package-lock.json, package.json    express や discord.js などの、使用するパッケージ（ライブラリやフレームワーク）とそのバージョン等を記録している。大量のモジュールフォルダを共有しなくても他の人や本番環境でも簡単に同じ環境を再現するための情報。
+package-lock.json, package.json →    express や discord.js などの、使用するパッケージ（ライブラリやフレームワーク）とそのバージョン等を記録している。大量のモジュールフォルダを共有しなくても他の人や本番環境でも簡単に同じ環境を再現するための情報。
