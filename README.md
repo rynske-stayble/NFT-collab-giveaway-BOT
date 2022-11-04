@@ -21,3 +21,11 @@ NFT collab-giveaway BOT は自分のDiscordサーバーで他のNFTプロジェ�
 /discord/index.js　→          /discord/deployCommand.jsで登録したコマンドを実行するファイル、サーバーの中で常時起動し動かしている
 
 package-lock.json, package.json →    express や discord.js などの、使用するパッケージ（ライブラリやフレームワーク）とそのバージョン等を記録している。大量のモジュールフォルダを共有しなくても他の人や本番環境でも簡単に同じ環境を再現するための情報。
+
+
+## 備考
+使用言語: Javascript, SQL
+実行環境: node.js
+パッケージ管理: npm
+データベース: PostgreSQL
+クラウドサービス: Heroku
