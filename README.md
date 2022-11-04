@@ -4,3 +4,11 @@ NFT collab-giveaway BOT は自分のDiscordサーバーで他のNFTプロジェ�
 各NFTプロジェクトに存在する「Collab Maneger」の役割を担います。
 
 
+## コマンド一覧
+
+/set-collab-channel 【チャンネルリンク】
+コラボギブアウェイ用のチャンネルを設定
+
+
+/set-templete 【メッセージリンク】
+コラボギブアウェイテンプレートの設定
