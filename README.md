@@ -25,7 +25,11 @@ package-lock.json, package.json →    express や discord.js などの、使用
 
 ## 備考
 使用言語: Javascript, SQL
+
 実行環境: node.js
+
 パッケージ管理: npm
+
 データベース: PostgreSQL
+
 クラウドサービス: Heroku
