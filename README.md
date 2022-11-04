@@ -17,4 +17,7 @@ NFT collab-giveaway BOT は自分のDiscordサーバーで他のNFTプロジェ�
 
 ## 各ファイルの説明
 /discord/deployCommand.js  Commandを登録しているファイル
+
 /discord/index.js          /discord/deployCommand.jsで登録したコマンドを実行するファイル
+
+
