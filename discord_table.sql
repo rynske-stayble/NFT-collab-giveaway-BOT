@@ -2,6 +2,7 @@
 
 -- serversというテーブルを作成
 -- column_name data_type, column_name data_type, ...
+-- 主キー: Discord server ID
 CREATE TABLE servers (
     server_id varchar(100) primary key,
     template_message TEXT,
