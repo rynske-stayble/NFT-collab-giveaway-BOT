@@ -1,5 +1,4 @@
 const express = require("express");
-const { pool } = require("./discord/index");
 const app = express();
 const port = process.env.PORT || 3000;
 
