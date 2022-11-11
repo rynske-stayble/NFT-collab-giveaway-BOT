@@ -1,5 +1,8 @@
+// インストールしたExpressを呼び出す
 const express = require("express");
+// Expressを使えるような形でインスタンス化
 const app = express();
+// 環境変数PORTにあるものすべて、または何もない場合は3000を指定
 const port = process.env.PORT || 3000;
 
 
