@@ -1,13 +1,12 @@
 // indes.js: deployCommand.jsで設定したコマンドを動かすためにサーバーの中で常時起動させて動かしている
 // GatewayIntentBitsを使うことでURLでなくローカルサーバでも直接Clientに接続できる、ローカルから本番環境につなげて動かせる
 const { Client, GatewayIntentBits } = require('discord.js');
-const { Client, GatewayIntentBits } = require('discord.js');
-require('dotenv').config();
+require('dotenv').config(); // .env ファイルの内容を読み込んで、process.env オブジェクトのプロパティとして参照できるようにする
 
 // PostgreSQLと接続するための設定
 // DATABASE_URLと接続
 // https://devcenter.heroku.com/ja/articles/getting-started-with-nodejs?singlepage=true
-const { Pool } = require('pg');
+const { Pool } = require('pg');  // { Pool: Pool }
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
@@ -88,5 +87,4 @@ client.login(token);
 
 
 
-module.exports = {pool};
-
+module.exports = {pool};  // {pool}を他のファイルで使えるようにエクスポート
