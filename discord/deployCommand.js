@@ -1,10 +1,9 @@
 // Command を登録
 // .env: トークンなどが登録された別ファイル
 // const { Client, GatewayIntentBits } = require('discord.js');
-// clientID: Discord BOTのclient ID
 require('dotenv').config();
 const token = process.env.DISCORD_BOT_TOKEN; // 登録時に発行されたBOTトークン
-const clientId = process.env.clientId;
+const clientId = process.env.clientId;       // clientID: Discord BOTのclient ID
 const guildId = process.env.guildId;
 
 const { SlashCommandBuilder, Routes } = require('discord.js');
@@ -15,7 +14,7 @@ const { REST } = require('@discordjs/rest'); // Discord にアクセスする
 const commands = [
 	// コラボギブアウェイ投稿を行うchannelを設定するCommand
 	new SlashCommandBuilder()
-		.setName('set-channel') // Command 名
+		.setName('set-channel')                // Command 名
 		.setDescription('set channel to post') // Command の説明
 		.addChannelOption(option => option.setName('post-channel').setDescription('channel to post').setRequired(true)), // Command の Option
 
