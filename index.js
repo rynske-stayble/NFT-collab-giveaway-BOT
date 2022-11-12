@@ -1,16 +1,13 @@
-// インストールしたExpressを呼び出す
-const express = require("express");
-// Expressを使えるような形でインスタンス化
-const app = express();
-// 環境変数PORTにあるものすべて、または何もない場合は3000を指定
-const port = process.env.PORT || 3000;
+const express = require("express");    // インストールしたExpressを呼び出す
+const app = express();                 // Expressを使えるような形でインスタンス化
+const port = process.env.PORT || 3000; // 環境変数PORTにあるものすべて、または何もない場合は3000を指定
 
+require("./discord/index");            // ./discord/index.jsの{pool}を呼び出し
 
-require("./discord/index");
-
+// Request: WEB APIのエンドポイントをPortのルートディレクトリに指定してget. ブラウザを読み込む動作
 app.get("/", (req, res) => {
-    console.log("ルート");
-    res.send("ルート");
+    console.log("ルート");              // Responce: コンソールに「ルート」と表示
+    res.send("ルート");                 // Responce: ブラウザに「ルート」と表示
 })
 
 
