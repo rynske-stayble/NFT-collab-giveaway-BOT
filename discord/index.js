@@ -3,12 +3,10 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 require('dotenv').config(); // .env ファイルの内容を読み込んで、process.env オブジェクトのプロパティとして参照できるようにする
 
-// PostgreSQLと接続するための設定
-// DATABASE_URLと接続
 // https://devcenter.heroku.com/ja/articles/getting-started-with-nodejs?singlepage=true
-const { Pool } = require('pg');  // { Pool: Pool }
+const { Pool } = require('pg');  // { Pool: Pool }, Node.jsからPostgreSQLを扱えるようにrequire()
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL, // DATABASE_URLと接続
     ssl: {
         rejectUnauthorized: false
     }
